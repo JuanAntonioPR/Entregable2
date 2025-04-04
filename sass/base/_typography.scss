@@ -1,2 +1,5 @@
 @use "../abstracts/abstracts" as ab;
 
+h1 {
+    font-family: ab.$fuente-h1;
+}

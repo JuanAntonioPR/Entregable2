@@ -26,21 +26,21 @@
   }
 }
 
-@mixin button($bg: v.$color-azul-texto, $hover-bg: v.$color-azul-texto-hover) {
+@mixin button {
   display: inline-block;
-  padding: 12px 28px;
+  padding: 10px 58px;
   border: none;
-  border-radius: 24px;
+  border-radius: 16px 16px 16px 0px;
   text-decoration: none;
-  background-color: $bg;
-  color: #ffffff;
+  background-color: v.$color-fondo-secundario;
+  color: v.$color-blanco-texto;
   font-size: v.$sizeS;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 
   &:hover {
-    background-color: $hover-bg;
+    background-color: v.$color-fondo-secundario-hover;
     transform: scale(1.05);
   }
 }
