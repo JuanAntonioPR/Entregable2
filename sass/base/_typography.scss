@@ -1,5 +1,9 @@
 @use "../abstracts/abstracts" as ab;
 
+body {
+    color: ab.$color-blanco-texto
+}
+
 h1 {
     font-family: ab.$fuente-h1;
 }

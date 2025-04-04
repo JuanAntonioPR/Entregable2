@@ -1,1 +1,45 @@
 @use "../abstracts/abstracts" as ab;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 40px 0px;
+    background-color: grey;
+
+    .nav ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+        list-style: none;
+        padding-right: 60px;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding-top: 20px;
+
+            a {
+                color: ab.$color-gris-texto;
+                font-size: ab.$sizeS;
+                text-decoration: none;
+    
+                &:hover {
+                    color: ab.$color-blanco-texto;
+                }
+
+                &:hover+img {
+                    visibility: visible;
+                }
+            }
+
+            img {
+                width: 25px;
+                visibility: hidden;
+            };
+        }
+
+    }
+}
