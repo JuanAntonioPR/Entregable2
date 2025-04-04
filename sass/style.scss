@@ -18,6 +18,137 @@ body {
 
         .main {
             display: flex;
+            margin-top: 40px;
+
+            .content {
+                width: 60%;
+            }
+
+            .decorative {
+                width: 40%;
+                height: 70vh;
+                display: grid;
+                gap: 20px;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                grid-template-areas: 
+                "box1 box2 ."
+                "box1 box2 box3"
+                "box1 box5 box3"
+                "box1 box5 box3"
+                "box4 box5 box3"
+                "box4 box5 .";
+
+                .decorative--box1 {
+                    grid-area: box1;
+                    background-color: ab.$bg-color-box1;
+                    border-radius: 60px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                
+                    img {
+                        width: 100%;
+                        height: auto;
+                        transform: scale(5) translateY(-7px);
+                        translate: 4px;
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    &:hover img {
+                        transform: scale(5.3) translateY(-7px);
+                    }
+                }
+
+                .decorative--box2 {
+                    grid-area: box2;
+                    background-color: ab.$bg-color-box2;
+                    border-radius: 60px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        transform: scale(3.4) translateY(12px);
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    &:hover img {
+                        transform: scale(3.7) translateY(12px);
+                    }
+                }
+
+                .decorative--box3 {
+                    grid-area: box3;
+                    background-color: ab.$bg-color-box3;
+                    border-radius: 60px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        transform: scale(3.1) translateY(-5px);
+                        translate: -60px;
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    &:hover img {
+                        transform: scale(3.4) translateY(-5px);
+                    }
+                }
+                
+                .decorative--box4 {
+                    grid-area: box4;
+                    background-color: ab.$bg-color-box4;
+                    border-radius: 60px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        transform: scale(4) translateY(-24px);
+                        translate: 6px;
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    &:hover img {
+                        transform: scale(4.3) translateY(-24px);
+                    }
+                }
+                
+                .decorative--box5 {
+                    grid-area: box5;
+                    background-color: ab.$bg-color-box5;
+                    border-radius: 60px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        transform: scale(4.1) translateY(-24px);
+                        translate: 6px;
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    &:hover img {
+                        transform: scale(4.4) translateY(-24px);
+                    }
+                }
+            }
+
         }
     }
 }

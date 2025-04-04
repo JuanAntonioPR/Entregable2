@@ -7,6 +7,10 @@
     padding: 0px 0px 40px 0px;
     background-color: grey;
 
+    .logo {
+        cursor: pointer;
+    }
+
     .nav ul {
         display: flex;
         justify-content: flex-start;
