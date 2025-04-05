@@ -55,10 +55,21 @@ body {
                         a {
                             color: ab.$color-blanco-texto;
                             font-size: 14px;
+                            transition: all 0.3s ease-in-out, transform 0.2s ease-in-out;
+
+                            &:hover {
+                                transform: scale(1.05);
+                            }
                         }
 
                         img {
                             width: 25%;
+                            transition: all 0.3s ease-in-out, transform 0.2s ease-in-out;
+
+                            &:hover {
+                                transform: scale(1.15);
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
@@ -76,6 +87,12 @@ body {
 
                         img {
                             width: 45px;
+                            transition: all 0.3s ease-in-out, transform 0.2s ease-in-out;
+
+                            &:hover {
+                                transform: scale(1.15);
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
@@ -115,6 +132,7 @@ body {
 
                     &:hover img {
                         transform: scale(4.6) translateY(-7px);
+                        cursor: pointer;
                     }
                 }
 
@@ -136,6 +154,7 @@ body {
 
                     &:hover img {
                         transform: scale(3.4) translateY(22px);
+                        cursor: pointer;
                     }
                 }
 
@@ -158,6 +177,7 @@ body {
 
                     &:hover img {
                         transform: scale(3.2) translateX(-3px);
+                        cursor: pointer;
                     }
                 }
                 
@@ -180,6 +200,7 @@ body {
 
                     &:hover img {
                         transform: scale(3.6) translateY(-28px);
+                        cursor: pointer;
                     }
                 }
                 
@@ -202,6 +223,7 @@ body {
 
                     &:hover img {
                         transform: scale(3.8) translateY(-25px);
+                        cursor: pointer;
                     }
                 }
             }
