@@ -9,6 +9,10 @@
 
 body {
     background-color: ab.$color-fondo;
+    background-image: url(../img/ellipse-L.svg), url(../img/ellipse-M.svg);
+    background-size: 60%, 40%;
+    background-repeat: no-repeat;
+    background-position: 125% -100%, 105% 400%;
 
     .container {
         max-width: 1300px;
@@ -18,15 +22,68 @@ body {
 
         .main {
             display: flex;
-            margin-top: 40px;
+            justify-content: space-between;
 
             .content {
-                width: 55%;
+                width: 45%;
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                h1 {
+                    line-height: 70px;
+                }
+
+                p {
+                    width: 83%;
+                    line-height: 30px;
+                }
+
+                .links {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 20px;
+
+                    div {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 5px;
+
+                        a {
+                            color: ab.$color-blanco-texto;
+                            font-size: 14px;
+                        }
+
+                        img {
+                            width: 25%;
+                        }
+                    }
+                }
+
+                .activities {
+                    display: flex;
+                    margin-top: 90px;
+                    width: 75%;
+                    gap: 32px;
+
+                    .activities--box {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+
+                        img {
+                            width: 45px;
+                        }
+                    }
+                }
             }
 
             .decorative {
-                width: 45%;
-                height: 70vh;
+                width: 50%;
+                height: 76vh;
                 display: grid;
                 gap: 20px;
                 grid-template-columns: repeat(3, 1fr);
@@ -51,13 +108,13 @@ body {
                     img {
                         width: 100%;
                         height: auto;
-                        transform: scale(4.4) translateY(-7px);
+                        transform: scale(4.3) translateY(-7px);
                         translate: 4px;
                         transition: transform 0.3s ease-in-out;
                     }
 
                     &:hover img {
-                        transform: scale(4.7) translateY(-7px);
+                        transform: scale(4.6) translateY(-7px);
                     }
                 }
 
@@ -73,12 +130,12 @@ body {
                     img {
                         width: 100%;
                         height: auto;
-                        transform: scale(3.2) translateY(20px);
+                        transform: scale(3.1) translateY(22px);
                         transition: transform 0.3s ease-in-out;
                     }
 
                     &:hover img {
-                        transform: scale(3.5) translateY(20px);
+                        transform: scale(3.4) translateY(22px);
                     }
                 }
 
@@ -94,13 +151,13 @@ body {
                     img {
                         width: 100%;
                         height: auto;
-                        transform: scale(3);
+                        transform: scale(2.9) translateX(-3px);
                         translate: -70px;
                         transition: transform 0.3s ease-in-out;
                     }
 
                     &:hover img {
-                        transform: scale(3.3);
+                        transform: scale(3.2) translateX(-3px);
                     }
                 }
                 
@@ -116,13 +173,13 @@ body {
                     img {
                         width: 100%;
                         height: auto;
-                        transform: scale(3.5) translateY(-26px);
+                        transform: scale(3.3) translateY(-28px);
                         translate: 6px;
                         transition: transform 0.3s ease-in-out;
                     }
 
                     &:hover img {
-                        transform: scale(3.8) translateY(-26px);
+                        transform: scale(3.6) translateY(-28px);
                     }
                 }
                 
@@ -138,13 +195,13 @@ body {
                     img {
                         width: 100%;
                         height: auto;
-                        transform: scale(3.5) translateY(-26px);
+                        transform: scale(3.5) translateY(-25px);
                         translate: 6px;
                         transition: transform 0.3s ease-in-out;
                     }
 
                     &:hover img {
-                        transform: scale(3.8) translateY(-26px);
+                        transform: scale(3.8) translateY(-25px);
                     }
                 }
             }

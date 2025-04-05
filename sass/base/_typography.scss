@@ -6,4 +6,15 @@ body {
 
 h1 {
     font-family: ab.$fuente-h1;
+    font-size: ab.$sizeL;
+}
+
+p.description {
+    font-size: ab.$sizeM;
+    color: ab.$color-gris-texto;
+}
+
+h3 {
+    font-size: ab.$sizeS;
+    font-weight: 500;
 }
